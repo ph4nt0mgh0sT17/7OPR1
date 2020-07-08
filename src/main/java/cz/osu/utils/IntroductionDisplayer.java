@@ -26,19 +26,19 @@ public class IntroductionDisplayer {
     }
 
     private static String getImplementationTitle() {
-        String implementationTitle = Optional.ofNullable(OsuApp.class.getPackage().getImplementationTitle()).orElse(OsuApp.class.getName());
+        String implementationTitle = PackageInformation.getImplementationTitle();
 
         return "\tTitle: " + implementationTitle + "\n";
     }
 
     private static String getImplementationVersion() {
-        String implementationVersion = Optional.ofNullable(OsuApp.class.getPackage().getImplementationVersion()).orElse("Unknown");
+        String implementationVersion = PackageInformation.getImplementationVersion();
 
         return "\tVersion: " + implementationVersion + "\n";
     }
 
     private static String getImplementationVendor() {
-        String implementationVendor = Optional.ofNullable(OsuApp.class.getPackage().getImplementationVendor()).orElse("Unknown author");
+        String implementationVendor = PackageInformation.getImplementationVendor();
 
         return "\tAuthor: " + implementationVendor + "\n";
     }
