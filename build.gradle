@@ -1,0 +1,47 @@
+plugins {
+    id 'java'
+    id "com.adarshr.test-logger" version "2.0.0"
+}
+
+group 'cz.osu'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly(
+            'org.slf4j:slf4j-api:1.7.2',
+            'ch.qos.logback:logback-classic:1.0.9',
+            'ch.qos.logback:logback-core:1.0.9'
+    )
+
+    runtimeOnly(
+            'org.slf4j:slf4j-api:1.7.2',
+            'ch.qos.logback:logback-classic:1.0.9',
+            'ch.qos.logback:logback-core:1.0.9'
+    )
+
+    testImplementation(
+            'junit:junit:4.13'
+    )
+}
+
+jar {
+    manifest {
+        attributes(
+                "Main-Class": "cz.osu.OsuApp",
+                "Implementation-Title": "${rootProject.name}",
+                "Implementation-Version": "${version}",
+                "Implementation-Vendor": "David Miko"
+        )
+    }
+
+    from {
+        configurations.runtimeClasspath.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+}
+
