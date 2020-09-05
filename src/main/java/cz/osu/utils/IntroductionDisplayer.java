@@ -1,9 +1,5 @@
 package cz.osu.utils;
 
-import cz.osu.OsuApp;
-
-import java.util.Optional;
-
 /**
  * The introduction displayer class responsible for displaying the introduction text.
  */
@@ -16,11 +12,11 @@ public class IntroductionDisplayer {
         StringBuilder introduction = new StringBuilder();
 
         introduction
-                .append("#################################\n")
+                .append("###################################################\n")
                 .append(getImplementationTitle())
                 .append(getImplementationVersion())
                 .append(getImplementationVendor())
-                .append("#################################\n");
+                .append("###################################################\n");
 
         return introduction.toString();
     }

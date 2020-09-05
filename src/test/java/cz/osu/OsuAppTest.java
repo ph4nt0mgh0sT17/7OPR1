@@ -1,6 +1,6 @@
 package cz.osu;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * The basic class for development testing.

@@ -1,18 +1,17 @@
 package cz.osu;
 
 import cz.osu.utils.IntroductionDisplayer;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class OsuApp {
-    private static final Logger logger = LoggerFactory.getLogger(OsuApp.class);
 
     public static void main(String[] args) {
-        logger.info("The application started.");
+        log.info("The application started.");
 
         System.out.println(IntroductionDisplayer.renderIntroduction());
 
-        logger.info("The application ended.");
+        log.info("The application ended.");
     }
 
 

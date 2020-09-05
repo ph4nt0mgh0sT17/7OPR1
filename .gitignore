@@ -3,3 +3,6 @@
 /log/
 /gradle/wrapper/gradle-wrapper.jar
 /gradle/wrapper/gradle-wrapper.properties
+/.idea/libraries/
+/.idea/inspectionProfiles/
+/.idea/dictionaries/

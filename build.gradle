@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id "com.adarshr.test-logger" version "2.0.0"
+    id "io.freefair.lombok" version "5.1.0"
 }
 
 group 'cz.osu'
@@ -14,7 +15,12 @@ dependencies {
     compileOnly(
             'org.slf4j:slf4j-api:1.7.2',
             'ch.qos.logback:logback-classic:1.0.9',
-            'ch.qos.logback:logback-core:1.0.9'
+            'ch.qos.logback:logback-core:1.0.9',
+            'org.projectlombok:lombok:1.18.12'
+    )
+
+    annotationProcessor(
+            'org.projectlombok:lombok:1.18.12'
     )
 
     runtimeOnly(
@@ -24,8 +30,14 @@ dependencies {
     )
 
     testImplementation(
-            'junit:junit:4.13'
+            'org.junit.jupiter:junit-jupiter-api:5.6.2'
     )
+
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-api:5.6.2")
+}
+
+test {
+    useJUnitPlatform()
 }
 
 jar {
