@@ -7,6 +7,6 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 
-/libraries/
-/inspectionProfiles/
 /dictionaries/
+/inspectionProfiles/
+/libraries/
