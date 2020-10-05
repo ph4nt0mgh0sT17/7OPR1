@@ -38,12 +38,14 @@ public class OsuApp {
         Person person2 = new Person("Eliska", 1978, 66.24);
         Person person3;
 
+        // Using the copy constructor -> Deep copy
         person3 = new Person(person2);
 
         System.out.println(person1);
         System.out.println(person2);
         System.out.println(person3);
 
+        // Here we can see the objects are not pointing to the same object because of copy constructor
         if (person3 == person2)
             System.out.println("I point to the same object.");
 
@@ -51,8 +53,11 @@ public class OsuApp {
             System.out.println("I don't point to the same object.");
 
         Person person4;
+
+        // Basically copy pointre -> shallow copy
         person4 = person1;
 
+        // We can see that the objects points to the same object...
         if (person4 == person1)
             System.out.println("I point to the same object.");
 
