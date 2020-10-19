@@ -1,5 +1,7 @@
 package cz.osu;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 import org.junit.jupiter.api.Test;
 
 /**
@@ -9,7 +11,7 @@ public class OsuAppTest {
 
     @Test
     public void basicTest() {
-        assert 1 == 1;
+        assertEquals(1, 1);
     }
 }
 

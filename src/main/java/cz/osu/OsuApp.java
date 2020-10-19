@@ -1,7 +1,9 @@
 package cz.osu;
 
+import cz.osu.banking.BankAccount;
+import cz.osu.banking.BankAccountSingleton;
 import cz.osu.structures.Vector;
-import cz.osu.utils.IntroductionDisplayer;
+import cz.osu.utils.console.IntroductionDisplayer;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Random;
@@ -14,13 +16,13 @@ public class OsuApp {
 
         System.out.println(IntroductionDisplayer.renderIntroduction());
 
-        Vector v1 = new Vector(10);
-        Random rnd = new Random();
-        for (int i = 0; i < v1.getSize(); i++) {
-            v1.setVectorItem(i, rnd.nextInt(20));
-        }
+        System.out.println(BankAccountSingleton.getInstance());
 
-        System.out.println(v1);
+        BankAccountSingleton bankAccountSingleton = BankAccountSingleton.getInstance();
+
+        bankAccountSingleton.deposit(60000);
+
+        System.out.println(BankAccountSingleton.getInstance());
 
         log.info("The application has exited!");
     }

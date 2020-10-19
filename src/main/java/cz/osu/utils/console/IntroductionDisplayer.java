@@ -1,4 +1,4 @@
-package cz.osu.utils;
+package cz.osu.utils.console;
 
 /**
  * The introduction displayer class responsible for displaying the introduction text.

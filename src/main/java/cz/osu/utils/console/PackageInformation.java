@@ -1,4 +1,4 @@
-package cz.osu.utils;
+package cz.osu.utils.console;
 
 import java.util.Optional;
 

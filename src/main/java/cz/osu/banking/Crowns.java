@@ -1,4 +1,4 @@
-package cz.osu.models;
+package cz.osu.banking;
 
 public class Crowns {
 

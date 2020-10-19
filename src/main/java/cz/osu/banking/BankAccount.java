@@ -1,9 +1,10 @@
-package cz.osu.models;
+package cz.osu.banking;
 
 import java.util.Random;
 
 public class BankAccount {
     private int accountNumber;
+
     private Crowns balance;
 
     public BankAccount() {
@@ -11,6 +12,9 @@ public class BankAccount {
         balance = new Crowns(0);
     }
 
+    public Crowns getBalance() {
+        return balance;
+    }
 
     private int generateAccountNumber() {
         return new Random().nextInt(Integer.MAX_VALUE);

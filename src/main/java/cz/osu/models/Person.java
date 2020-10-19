@@ -1,5 +1,8 @@
 package cz.osu.models;
 
+import cz.osu.banking.BankAccount;
+import cz.osu.banking.Crowns;
+
 import java.time.LocalDate;
 
 public class Person {

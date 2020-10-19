@@ -3,7 +3,6 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true">
-        <outputRelativeToContentRoot value="true" />
         <processorPath useProcessorModulePath="true">
           <entry name="$USER_HOME$/Desktop/lombok-1.18.12.jar" />
         </processorPath>
