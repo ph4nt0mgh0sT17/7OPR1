@@ -1,66 +1,59 @@
 package cz.osu.models;
 
 public class Address {
-
-    private State state;
+    private String state;
     private String city;
     private String street;
-    private int houseNumber;
+    private int zip;
 
-    public Address(State state, String city, String street, int houseNumber) {
+    /**
+     * Constructs an {@link Address}.
+     * @param state The state of the address.
+     * @param city The city of the address.
+     * @param street The street of the address.
+     * @param zip The integere value of zip code.
+     */
+    public Address(String state, String city, String street, int zip) {
         this.state = state;
         this.city = city;
         this.street = street;
-        this.houseNumber = houseNumber;
+        this.zip = zip;
     }
 
+    /**
+     * Constructs an address from another address. Copy-Constructor
+     * @param address Already created instance of the {@link Address}.
+     */
     public Address(Address address) {
-        city = address.getCity();
-        street = address.getStreet();
-        houseNumber = address.getHouseNumber();
-        state = new State(address.getState());
+        this.state = address.getState();
+        this.city = address.getCity();
+        this.street = address.getStreet();
+        this.zip = address.getZip();
     }
 
-    public State getState() {
+    public String getState() {
         return state;
-    }
-
-    public void setState(State state) {
-        this.state = state;
     }
 
     public String getCity() {
         return city;
     }
 
-    public void setCity(String city) {
-        this.city = city;
-    }
-
     public String getStreet() {
         return street;
     }
 
-    public void setStreet(String street) {
-        this.street = street;
-    }
-
-    public int getHouseNumber() {
-        return houseNumber;
-    }
-
-    public void setHouseNumber(int houseNumber) {
-        this.houseNumber = houseNumber;
+    public int getZip() {
+        return zip;
     }
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Address {\n\t\t");
-        sb.append("state = ").append(state).append(",\n\t\t");
-        sb.append("city='").append(city).append('\'').append(",\n\t\t");
-        sb.append("street='").append(street).append('\'').append(",\n\t\t");
-        sb.append("houseNumber=").append(houseNumber).append("\n\t");
-        sb.append('}');
-        return sb.toString();
+        return "Address{" +
+                "state='" + getState() + '\'' +
+                ", city='" + getCity() + '\'' +
+                ", street='" + getStreet() + '\'' +
+                ", zip=" + getZip() +
+                '}';
     }
 }
