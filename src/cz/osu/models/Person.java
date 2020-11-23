@@ -12,6 +12,13 @@ public class Person {
     private Address address;
     private final BirthDate birthDate;
 
+    /**
+     * Constructs the {@link Person} with all data.
+     * @param name The name of the person.
+     * @param sex The character value of its sex. (M / F)
+     * @param birthDate The {@link BirthDate} object that defines the date of the person's birth.
+     * @param address The address of the person.
+     */
     public Person(String name, char sex, BirthDate birthDate, Address address) {
         validateName(name);
         validateSex(sex);
@@ -19,7 +26,7 @@ public class Person {
         validateAddress(address);
 
         this.name = name;
-        this.sex = sex;
+        this.sex = String.valueOf(sex).toUpperCase().toCharArray()[0];
         this.birthDate = new BirthDate(birthDate);
         this.address = new Address(address);
         this.birthId = calculateBirthId(birthDate);
@@ -40,7 +47,8 @@ public class Person {
      * @param sex The sex of the person.
      */
     private void validateSex(char sex) {
-        if (sex != 'M' && sex != 'F') {
+        String sexString = String.valueOf(sex).toUpperCase();
+        if (!sexString.equals("M") && !sexString.equals("F")) {
             throw new IllegalArgumentException("The sex character can be only 'F' or 'M'.");
         }
     }
@@ -101,6 +109,8 @@ public class Person {
         return String.valueOf(birthIdNumber);
     }
 
+
+
     /**
      * Gets the age of Person based on {@link BirthDate} object.
      * @return The integer value of age.
@@ -113,6 +123,8 @@ public class Person {
 
         return difference.getYears();
     }
+
+    //<editor-fold desc="Getters">
 
     public String getName() {
         return name;
@@ -133,6 +145,8 @@ public class Person {
     public BirthDate getBirthDate() {
         return birthDate;
     }
+
+    //</editor-fold>
 
     @Override
     public String toString() {

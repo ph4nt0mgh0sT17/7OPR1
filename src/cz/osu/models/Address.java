@@ -31,6 +31,8 @@ public class Address {
         this.zip = address.getZip();
     }
 
+    //<editor-fold desc="Getters">
+
     public String getState() {
         return state;
     }
@@ -46,6 +48,8 @@ public class Address {
     public int getZip() {
         return zip;
     }
+
+    //</editor-fold>
 
     @Override
     public String toString() {
