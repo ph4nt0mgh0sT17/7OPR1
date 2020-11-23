@@ -136,13 +136,12 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" + "\n" +
-                "\t" + "name='" + name + '\'' + ",\n" +
-                "\t" + "sex=" + sex + ",\n" +
-                "\t" + "birthId='" + birthId + '\'' + ",\n" +
-                "\t" + "address=" + address + ",\n" +
-                "\t" + "birthDate=" + birthDate + ",\n" +
-                "\t" + "age="+ getAge() + ",\n" +
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", sex=" + sex +
+                ", birthId='" + birthId + '\'' +
+                ", address=" + address +
+                ", birthDate=" + birthDate +
                 '}';
     }
 }

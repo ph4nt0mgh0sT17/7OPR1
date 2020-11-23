@@ -2,31 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="372b0f41-bb9f-4b02-8b7c-9f55a1a037fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7OPR1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cz/osu/models/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cz/osu/models/BirthDate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cz/osu/models/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/7OPR1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/7OPR1.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/7OPR1.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/7OPR1.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/osu/OsuApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/osu/models/Address.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/osu/models/BirthDate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/osu/models/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cz/osu/EmployeeStudentRun.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cz/osu/models/Crowns.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cz/osu/models/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cz/osu/models/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cz/osu/models/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cz/osu/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cz/osu/models/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -57,7 +40,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.EmployeeStudentRun">
+    <configuration name="EmployeeStudentRun" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cz.osu.EmployeeStudentRun" />
+      <module name="7OPR1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cz.osu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="cz.osu.OsuApp" />
       <module name="7OPR1" />
@@ -79,8 +75,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.EmployeeStudentRun" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EmployeeStudentRun" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -93,11 +94,65 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606130979868</updated>
-      <workItem from="1606130982712" duration="146000" />
+      <workItem from="1606130982712" duration="698000" />
     </task>
+    <task id="LOCAL-00001" summary="XD">
+      <created>1606131170891</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606131170891</updated>
+    </task>
+    <task id="LOCAL-00002" summary="xddd">
+      <created>1606131198981</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606131198981</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="XD" />
+    <MESSAGE value="xddd" />
+    <option name="LAST_COMMIT_MESSAGE" value="xddd" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606131137253">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606131137253" />
+    <state x="765" y="220" key="#com.intellij.ide.util.MemberChooser" timestamp="1606131681875">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="220" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606131681875" />
+    <state x="585" y="106" key="CommitChangelistDialog2" timestamp="1606131198401">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="106" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606131198401" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1606131146888">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606131146888" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1606131146888">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606131146888" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1606131146888">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606131146888" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1606131146888">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606131146888" />
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1606131204838">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606131204838" />
   </component>
 </project>
