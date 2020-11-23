@@ -1,6 +1,6 @@
 package cz.osu.models;
 
-public class Employee extends Person {
+public class Employee extends Person implements Payable {
     private Position position;
     private Crowns salary;
 
@@ -19,8 +19,13 @@ public class Employee extends Person {
     }
 
     @Override
+    public Crowns getPayableAmount() {
+        return salary;
+    }
+
+    @Override
     public String toString() {
-        return super.toString() + "\n" + "Employee{" +
+        return "Employee{" +
                 "position=" + position +
                 ", salary=" + salary +
                 '}';
