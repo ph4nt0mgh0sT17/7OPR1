@@ -97,6 +97,10 @@ public class Invoice implements Payable {
         }
     }
 
+    /**
+     * Generates random part number of the {@link Invoice}.
+     * @return The generated part number.
+     */
     private String generatePartNumber() {
         Random numberGenerator = new Random();
 

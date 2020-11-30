@@ -45,7 +45,8 @@ public class Employee extends Person implements Payable {
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return super.toString() + "\n\t" +
+                "Employee{" +
                 "position=" + position +
                 ", salary=" + salary +
                 '}';

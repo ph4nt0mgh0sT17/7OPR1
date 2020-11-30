@@ -37,7 +37,7 @@ public class Student extends Person {
 
     @Override
     public String toString() {
-        return super.toString() + "\n" + "Student{" +
+        return super.toString() + "\n\t" + "Student{" +
                 "universityName='" + universityName + '\'' +
                 ", branchOfStudy='" + branchOfStudy + '\'' +
                 '}';

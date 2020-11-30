@@ -16,7 +16,7 @@ public class Company {
     public Company(String name, Address address) {
         this.name = name;
         this.address = address;
-        register = new Register();
+        register = new Register(20);
     }
 
     //<editor-fold desc="Getters">
